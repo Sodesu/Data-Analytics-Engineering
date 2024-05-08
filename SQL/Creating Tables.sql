@@ -1,4 +1,3 @@
-'''sql
 CREATE TEMPORARY TABLE temp_table AS (
     SELECT 
         variable1, 
