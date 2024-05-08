@@ -8,5 +8,4 @@ CREATE TEMPORARY TABLE temp_table AS (
     FROM 
         imported_table
     GROUP BY 
-        variable1, variable2, variable3
-);
+        variable1, variable2, variable3);
