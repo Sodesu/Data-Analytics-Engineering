@@ -1,4 +1,5 @@
-```CREATE TEMPORARY TABLE temp_table
+```sql
+CREATE TEMPORARY TABLE temp_table
 AS(
     SELECT variable1, variable2, variable3,
   COUNT(*) as Count,
