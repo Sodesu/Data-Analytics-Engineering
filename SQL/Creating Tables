@@ -1,4 +1,4 @@
-'''
+```
 CREATE TEMPORARY TABLE temp_table
 AS(
     SELECT variable1, variable2, variable3,
@@ -7,4 +7,4 @@ AS(
 new_column_name
  FROM imported_table
  GROUP BY variable1, variable2, variable3);
-'''
+```
