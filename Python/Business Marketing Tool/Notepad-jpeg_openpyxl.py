@@ -153,9 +153,12 @@ if not df1.empty:
     
     notepad_filename = os.path.join(downloads_path, 'New_Informants_Data.txt')
     with open(notepad_filename, 'w') as file:
+
+        # file.write("\n--------------------------------------------------------------\n\n")
+        
         for data_row in new_informants_data:
             line = '\t'.join(str(item) for item in data_row)
-            file.write(line + '\n\n')
+            file.write('\n' + line + '\n')
 
 
 
