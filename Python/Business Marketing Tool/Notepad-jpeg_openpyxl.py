@@ -144,20 +144,30 @@ if sys.platform.startswith('win'):
 else:
     print("OS is not native to Windows")
 
-# Extract data from SharePoint excel workbook for new informants
+
 new_informants_data = []
 if not df1.empty:
     for row in df1[df1['INFORMANT'].isin(clean_new_informants)].itertuples(index=False, name=None):
-        new_informants_data.append((row[0], row[2], row[3], "", row[4], row[5]))  # Adding empty string between columns C and D
+        new_informants_data.append((row[0], row[2], row[3], "", row[4], row[5]))
 
-    # Create notepad file
+    
     notepad_filename = os.path.join(downloads_path, 'New_Informants_Data.txt')
     with open(notepad_filename, 'w') as file:
         for data_row in new_informants_data:
             line = '\t'.join(str(item) for item in data_row)
             file.write(line + '\n\n')
 
-    print(f'Saved new informants data to {notepad_filename}')
+
+
+    new_informants_data = glob(os.path.join(downloads_path, '*.txt'))
+    if new_informants_data:
+        print("Existing .txt files found. Removing all .txt files in the directory.")
+        for txt_file in new_informants_data:
+            os.remove(txt_file)
+    else:
+        print("No .txt files found in downloads")
+
+    
 
     if sys.platform.startswith('win'):
         subprocess.Popen(['notepad', notepad_filename])
