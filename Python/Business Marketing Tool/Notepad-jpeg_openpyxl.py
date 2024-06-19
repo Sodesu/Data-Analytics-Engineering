@@ -44,7 +44,7 @@ for cell in sheet['A']:
     if cell.value != 'INFORMANT':
         cell_color = cell.fill.start_color.rgb
 
-        if cell.value == "HARCODED NAME":
+        if cell.value == "HARDCODED NAME":
             break
 
         if cell_color not in non_blue_colors: # This logic handles colors that aren't excel's standard primary colors
@@ -65,7 +65,7 @@ df1 = pd.read_excel(INFORMANT_LIST, sheet_name='informants', usecols=['INFORMANT
 
 new_informants = []
 for name in df1['INFORMANT']:
-    if name == "HARCODED NAME":
+    if name == "HARDCODED NAME":
         break
     if name not in ignore_names:
         new_informants.append(name)
@@ -76,21 +76,21 @@ def clean_name(name):
     name = name.replace(' (OL)', '').replace(' (I.T)', '').strip().replace(' (AWHOL)', '').strip()
     return name
 
-BAT_Security_Experts = []
+BMT_Informants = []
 
 for col_name in name_columns:
     Table_Contained_Names = [clean_name(name) for name in df2[col_name].dropna().unique().tolist()]
-    BAT_Security_Experts.extend(Table_Contained_Names)
+    BMT_Informants.extend(Table_Contained_Names)
 
-new_seller_names = set(new_informants) - set(BAT_Security_Experts)
+new_informant_names = set(new_informants) - set(BMT_Informants)
 
-clean_new_informants = {x for x in new_seller_names if x == x}
+clean_new_informants = {x for x in new_informant_names if x == x}
 
-new_seller_names_ids = [(row.INFORMANT, row.ID) for index, row in df1[df1['INFORMANT'].isin(clean_new_informants)].iterrows()]
+new_informant_names_ids = [(row.INFORMANT, row.ID) for index, row in df1[df1['INFORMANT'].isin(clean_new_informants)].iterrows()]
 
-dismissed_seller_names = set(BAT_Security_Experts) - set(new_informants)
+departed_informant_names = set(BMT_Informants) - set(new_informants)
 
-leavers_names_ids = [(row.INFORMANT, row.ID) for index, row in df1[df1['INFORMANT'].isin(dismissed_seller_names)].iterrows()]
+informants_on_leave = [(row.INFORMANT, row.ID) for index, row in df1[df1['INFORMANT'].isin(departed_informant_names)].iterrows()]
 
 app = QApplication(sys.argv)
 
@@ -123,8 +123,8 @@ def add_section_to_layout(title, items):
             layout.addWidget(QLabel(item_st))
         layout.addWidget(QLabel(''))
 
-add_section_to_layout("New informants to be added:", new_seller_names_ids)
-add_section_to_layout("informants to be removed", leavers_names_ids)
+add_section_to_layout("New informants to be added:", new_informant_names)
+add_section_to_layout("informants to be removed", departed_informant_names)
 add_section_to_layout("Informants on leave:", informants_on_leave)
 add_section_to_layout("Informants in training:", informants_in_training)
 
@@ -147,6 +147,7 @@ else:
 
 new_informants_data = []
 if not df1.empty:
+# if new_informant_names: Alternate method to confirm if list is empty
     for row in df1[df1['INFORMANT'].isin(clean_new_informants)].itertuples(index=False, name=None):
         new_informants_data.append((row[0], row[2], row[3], "", row[4], row[5]))
 
@@ -154,7 +155,7 @@ if not df1.empty:
     notepad_filename = os.path.join(downloads_path, 'New_Informants_Data.txt')
     with open(notepad_filename, 'w') as file:
 
-        # file.write("\n--------------------------------------------------------------\n\n")
+        file.write("\n--------------------------------------------------------------\n\n")
         
         for data_row in new_informants_data:
             line = '\t'.join(str(item) for item in data_row)
@@ -177,4 +178,5 @@ if not df1.empty:
     else:
         print("OS is not native to Windows")
 else:
-    print("No new informants data available")
+    print("No new informants data available from df1")
+    # print("No new informants data available from new_informant_names list")
