@@ -147,7 +147,7 @@ else:
 
 new_informants_data = []
 if not df1.empty:
-# if new_informant_names: Alternate method to confirm if list is empty
+# if new_informant_names: Alternative method to confirm if list is empty
     for row in df1[df1['INFORMANT'].isin(clean_new_informants)].itertuples(index=False, name=None):
         new_informants_data.append((row[0], row[2], row[3], "", row[4], row[5]))
 
