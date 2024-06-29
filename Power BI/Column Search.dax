@@ -1,0 +1,9 @@
+EVALUATE 
+ADDCOLUMNS(
+    SUMMARIZE(
+        Table,
+        Table[Column Name]
+      ),
+"New Column Name",
+    IF(Table[Column Name]= "Column Variable", "New Column Variable 1", "New Column Variable 2")
+)
