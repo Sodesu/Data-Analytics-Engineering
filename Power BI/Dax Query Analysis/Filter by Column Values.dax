@@ -1,0 +1,9 @@
+EVALUATE
+SELECTCOLUMNS(
+    FILTER(
+        Table,
+        Table[Column Name 2] IN { "value1", "value2", "value3", "value4"}
+    ),
+    "Custom Column 1", Table[Column Name 1],
+    "Custom Column 2", Table[Column Name 2]
+)
