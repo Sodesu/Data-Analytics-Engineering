@@ -1,0 +1,6 @@
+EVALUATE
+SELECTCOLUMNS(
+    Table,
+    "Custom Column 1", Table[Column Name 1],
+    "Custom Column 2", Table[Column Name 2]
+)
