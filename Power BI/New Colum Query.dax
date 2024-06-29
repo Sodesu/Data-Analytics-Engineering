@@ -1,0 +1,8 @@
+EVALUATE 
+ADDCOLUMNS(
+    FILTER(
+       Table,
+        CONTAINSSTRING(Table[Column Name], "CustomColString")
+    ),
+    "NewColumnName", "ConfirmationVariable"
+)
