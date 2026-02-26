@@ -4,7 +4,7 @@ Code View:
  
 Step 2
 Obtain Month Day
-Inputs:
+Inputs: [Link](https://github.com/Sodesu/Data-Analytics-Engineering/blob/80f617f61bfab501df95a887115710e6a878f2ed/Microsoft%20Office%20Apps/Power%20Automate/Obtain_Month_Day.json)
  
 
 Step 3
