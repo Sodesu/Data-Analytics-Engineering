@@ -16,8 +16,8 @@ Site Address* <br>
 File ID: 1stWorkbook.xlsx<br>
 Infer Content Type: Yes
 
-**Action 4.**
-Create New 2M File<br>
+**Action 4.** <br>
+Sharepoint - Create New 2M File<br>
 Folder Path: Target Directory within Sharepoint<br>
 File Name: 2ndWorkbook.xlsx<br>
 File Content: body('Get_Original_Workbook_Data')
