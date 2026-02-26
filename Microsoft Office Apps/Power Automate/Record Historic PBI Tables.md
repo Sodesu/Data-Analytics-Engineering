@@ -5,7 +5,7 @@
 Scheduled Trigger-Recurrence<br>
 Code View: <a href="https://github.com/Sodesu/Data-Analytics-Engineering/blob/fc9a629c1297f2bbd1433a3ff38c4593b4841abd/Microsoft%20Office%20Apps/Power%20Automate/WDL%20%7C%20JSON%20Files/EOM%20Reccurrrence.json">Link</a>
 
-<br>**Action 2.** <br>
+<p>**Action 2.** <br>
 Sharepoint - Delete 2nd Workbook<br>
 Site Address* <br>
 File ID: 2ndWorkbook.xlsx
