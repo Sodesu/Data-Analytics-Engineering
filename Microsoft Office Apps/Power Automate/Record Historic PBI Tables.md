@@ -1,4 +1,4 @@
-Step 1.<br>
+**Step 1.**<br>
 Scheduled Trigger-Recurrence<br>
 Code View:
  
