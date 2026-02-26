@@ -1,11 +1,11 @@
 <center>
 <b>Action 1.</b><br>
 Scheduled Trigger-Recurrence<br>
-Code View: [Link]
+Code View: [Link](https://github.com/Sodesu/Data-Analytics-Engineering/blob/bb0f8d04e0928eb83535dc25a57ba7da66391872/Microsoft%20Office%20Apps/Power%20Automate/WDL%20%7C%20JSON%20Files/ETL_Excel_Pivot_Tables_Recurrence.json)
  
 **Action 2.** <br>
 Obtain Month Day<br>
-Inputs: [Link](https://github.com/Sodesu/Data-Analytics-Engineering/blob/80f617f61bfab501df95a887115710e6a878f2ed/Microsoft%20Office%20Apps/Power%20Automate/Obtain_Month_Day.json)
+Inputs: [Link](https://github.com/Sodesu/Data-Analytics-Engineering/blob/bb0f8d04e0928eb83535dc25a57ba7da66391872/Microsoft%20Office%20Apps/Power%20Automate/WDL%20%7C%20JSON%20Files/Obtain_Month_Day.json)
  
 
 **Action 3.** <br>
