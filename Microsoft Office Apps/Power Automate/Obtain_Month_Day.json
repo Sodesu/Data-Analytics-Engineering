@@ -1,0 +1,11 @@
+concat(
+formatDateTime(utcNow(), 'MMMM'), ' ', 
+formatDateTime(utcNow(), 'dd'), 
+if(
+    or(equals(mod(int(formatDateTime(utcNow(), 'dd')), 100), 11),
+       equals(mod(int(formatDateTime(utcNow(), 'dd')), 100), 12),
+        equals(mod(int(formatDateTime(utcNow(), 'dd')), 100), 13)), 
+           'th', 
+           if(equals(mod(int(formatDateTime(utcNow(), 'dd')), 10), 1), 'st', 
+                if(equals(mod(int(formatDateTime(utcNow(), 'dd')), 10), 2), 'nd',
+                    if(equals(mod(int(formatDateTime(utcNow(), 'dd')), 10), 3), 'rd', 'th')))))
