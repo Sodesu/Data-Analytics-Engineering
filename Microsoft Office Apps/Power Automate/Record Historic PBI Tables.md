@@ -1,9 +1,11 @@
 
-<div align="center">**Action 1.** <br>
+<div align="center">
+
+</b>Action 1.</b><br>
 Scheduled Trigger-Recurrence<br>
 Code View:
 
-**Action 2.** <br>
+<br>**Action 2.** <br>
 Sharepoint - Delete 2nd Workbook<br>
 Site Address* <br>
 File ID: 2ndWorkbook.xlsx
