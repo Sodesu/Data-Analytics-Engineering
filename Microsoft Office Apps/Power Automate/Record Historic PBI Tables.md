@@ -1,7 +1,7 @@
 
 <div align="center">
 
-</b>Action 1.</b><br>
+<b>Action 1.</b><br>
 Scheduled Trigger-Recurrence<br>
 Code View:
 
