@@ -1,5 +1,5 @@
-<center>
-<b>Action 1.</b><br>
+
+<center><b>Action 1.</b><br>
 Scheduled Trigger-Recurrence<br>
 Code View: <a href="https://github.com/Sodesu/Data-Analytics-Engineering/blob/bb0f8d04e0928eb83535dc25a57ba7da66391872/Microsoft%20Office%20Apps/Power%20Automate/WDL%20%7C%20JSON%20Files/ETL_Excel_Pivot_Tables_Recurrence.json">Link</a>
  
@@ -166,4 +166,4 @@ Please use the File from the most recent update or the original data from two da
 Many apologies for the inconvenience caused by this failed update.<br>
 Best,<br>
 Kunmi<br>
-Note - This is an automated message.</center>
+Note - This is an automated message.<center/>
