@@ -1,0 +1,19 @@
+{
+  "type": "Recurrence",
+  "recurrence": {
+    "frequency": "Day",
+    "interval": 1,
+    "startTime": "2025-02-28T14:54:00.000Z",
+    "schedule": {
+      "hours": [
+        "10"
+      ],
+      "minutes": [
+        20
+      ]
+    }
+  },
+  "metadata": {
+    "operationMetadataId": "2091c0dc-a57e-44eb-9e0d"
+  }
+}
