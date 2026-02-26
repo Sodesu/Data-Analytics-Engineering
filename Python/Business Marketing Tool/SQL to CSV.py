@@ -154,9 +154,9 @@ except Exception as e:
     connection.rollback()
     
 finally:
-        cursor.close()
-        connection.close()
-        print("Connection closed")
+    cursor.close()
+    connection.close()
+    print("Connection closed")
 
     
 if not SQL_Output_df.empty:
