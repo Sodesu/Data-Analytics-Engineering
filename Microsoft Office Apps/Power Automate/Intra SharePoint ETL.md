@@ -1,4 +1,4 @@
-<center>**Action 1.** <br>
+<center> **Action 1.** <br>
 Scheduled Trigger-Recurrence<br>
 Code View: [Link]
  
