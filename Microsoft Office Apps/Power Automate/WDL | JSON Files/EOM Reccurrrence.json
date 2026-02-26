@@ -1,0 +1,29 @@
+
+{
+  "type": "Recurrence",
+  "recurrence": {
+    "frequency": "Day",
+    "interval": 1,
+    "timeZone": "GMT Standard Time",
+    "startTime": "2025-08-01T12:00:00Z"
+  },
+  "conditions": [
+    {
+      "expression": "@or(equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-01-25'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-02-22'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-03-29'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-04-26'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-05-25'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-08-26'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-08-02'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-08-31'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-09-27'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-10-25'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-11-29'), 
+       equals(formatDateTime(utcNow(), 'yyyy-MM-dd'), '2026-12-31'))"
+    }
+  ],
+  "metadata": {
+    "operationMetadataId": "b1d8e424-0390-410c-bd42"
+  }
+}
