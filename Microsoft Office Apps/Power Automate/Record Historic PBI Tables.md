@@ -1,4 +1,4 @@
-**Action 1.** <br>
+<center>**Action 1.** <br>
 Scheduled Trigger-Recurrence<br>
 Code View:
  
@@ -165,4 +165,4 @@ Please use the File from the most recent update or the original data from two da
 Many apologies for the inconvenience caused by this failed update.<br>
 Best,<br>
 Kunmi<br>
-Note - This is an automated message.
+Note - This is an automated message.</center>
