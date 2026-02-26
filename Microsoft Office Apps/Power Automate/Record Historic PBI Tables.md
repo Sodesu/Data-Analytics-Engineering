@@ -1,14 +1,14 @@
-Step 1.[space][space]
-Scheduled Trigger-Recurrence[space][space]
+Step 1.<br>
+Scheduled Trigger-Recurrence<br>
 Code View:
  
-Step 2.[space][space]
-Obtain Month Day[space][space]
+Step 2.<br>
+Obtain Month Day<br>
 Inputs: [Link](https://github.com/Sodesu/Data-Analytics-Engineering/blob/80f617f61bfab501df95a887115710e6a878f2ed/Microsoft%20Office%20Apps/Power%20Automate/Obtain_Month_Day.json)
  
 
-Step 3.
-Day of Week
+Step 3.<br>
+Day of Week<br>
 Inputs: dayOfWeek(utcNow())
  
 Step 4.
