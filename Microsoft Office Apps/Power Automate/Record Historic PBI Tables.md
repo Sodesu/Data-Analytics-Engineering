@@ -36,7 +36,8 @@ Nulls Included: No
 
 **Action 7.** <br>
 Apply to Each<br>
-Select an output from Previous Steps: outputs('Run_a_Query_Against_Dataset')?['body/firstTableRows']
+Select an output from Previous Steps:<br>
+outputs('Run_a_Query_Against_Dataset')?['body/firstTableRows']
 
 **Action 8.** <br>
 Excel Online (Business) - Add Row Into Table<br>
